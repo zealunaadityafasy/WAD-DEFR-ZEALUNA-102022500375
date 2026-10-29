@@ -1,0 +1,169 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: Arial, sans-serif;
+    background: #f3f5f7;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+button, .btn-tambah, .btn-edit, .btn-hapus, .btn-kembali {
+    display: inline-block;
+    padding: 9px 13px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-tambah, .data-form button {
+    background: #198754;
+    color: white;
+}
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font: inherit;
+}
+
+.search-form input {
+    flex: 1;
+    min-width: 180px;
+}
+
+.search-form button {
+    background: #0d6efd;
+    color: white;
+}
+
+.search-form a {
+    align-self: center;
+    color: #333;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #198754;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+.actions {
+    white-space: nowrap;
+}
+
+.actions form {
+    display: inline;
+}
+
+.btn-edit {
+    background: #ffc107;
+    color: #222;
+}
+
+.btn-hapus {
+    background: #dc3545;
+    color: white;
+}
+
+.success {
+    padding: 12px;
+    margin-bottom: 20px;
+    color: #155724;
+    background: #d4edda;
+    border-radius: 5px;
+}
+
+.error {
+    margin-bottom: 15px;
+    padding: 10px;
+    color: #842029;
+    background: #f8d7da;
+    border-radius: 5px;
+}
+
+.empty {
+    text-align: center;
+    padding: 20px;
+}
+
+.data-form {
+    max-width: 600px;
+}
+
+.data-form label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: bold;
+}
+
+.data-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.data-form button {
+    margin-top: 20px;
+}
+
+.btn-kembali {
+    margin-top: 20px;
+    background: #6c757d;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
